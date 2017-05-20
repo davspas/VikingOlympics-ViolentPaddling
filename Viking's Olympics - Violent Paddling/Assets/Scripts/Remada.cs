@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Remada : MonoBehaviour {
 
-	public	float  forcaremada =  0.5f;
+	public	float  forcaremada =  100f;
 	private bool vivo;
-		
+
 	// Use this for initialization
 	void Start () {
 		vivo = true;
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 	public bool taVivo()

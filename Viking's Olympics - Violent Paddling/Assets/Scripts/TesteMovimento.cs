@@ -5,12 +5,12 @@ using UnityEngine;
 public class TesteMovimento : MonoBehaviour {
 
 	public float velocidade;
-	 public GameObject viking_1D;
-	 public GameObject viking_2D;
-	 public GameObject viking_3D;
-	public GameObject viking_1E;
-	public GameObject viking_2E;
-	public GameObject viking_3E;
+	public GameObject VikingDTopGreen;
+	public GameObject VikingDCenterGreen;
+	public GameObject VikingDBottomGreen;
+	public GameObject VikingETopGreen;
+	public GameObject VikingECenterGreen;
+	public GameObject VikingEBottomGreen;
 
 	Rigidbody2D rb;
 	Remada remadaD1;
@@ -23,16 +23,16 @@ public class TesteMovimento : MonoBehaviour {
 	void Start () 
 	{
 		rb = GetComponent<Rigidbody2D> ();
-		remadaD1 = viking_1D.GetComponent<Remada> ();
-		remadaD2 = viking_2D.GetComponent<Remada> ();
-		remadaD3 = viking_3D.GetComponent<Remada> ();
+		remadaD1 = VikingDTopGreen.GetComponent<Remada> ();
+		remadaD2 = VikingDCenterGreen.GetComponent<Remada> ();
+		remadaD3 = VikingDBottomGreen.GetComponent<Remada> ();
 
-		remadaE1 = viking_1E.GetComponent<Remada> ();
-		remadaE2 = viking_2E.GetComponent<Remada> ();
-		remadaE3 = viking_3E.GetComponent<Remada> ();
+		remadaE1 = VikingETopGreen.GetComponent<Remada> ();
+		remadaE2 = VikingECenterGreen.GetComponent<Remada> ();
+		remadaE3 = VikingEBottomGreen.GetComponent<Remada> ();
 
 
-	
+
 	}
 
 	// Update is called once per frame
@@ -52,7 +52,7 @@ public class TesteMovimento : MonoBehaviour {
 		//rotacao para direita
 		if (Input.GetKeyDown ("a") && remadaD1.taVivo ()) {
 			combinadadireita += remadaD1.forcaremada;
-			
+
 		}
 		if (Input.GetKeyDown ("s") && remadaD2.taVivo ()) {
 			combinadadireita += remadaD2.forcaremada;
@@ -63,7 +63,7 @@ public class TesteMovimento : MonoBehaviour {
 
 		}
 
-	
+
 
 
 		//rotacao para esquerda
